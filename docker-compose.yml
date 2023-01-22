@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  psql:
+    image: library/postgres:15-alpine
+    environment:
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=scala_slick_template
+    ports:
+      - '5432:5432'
